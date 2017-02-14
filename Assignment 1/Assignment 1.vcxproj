@@ -73,7 +73,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="stack.cpp" />
-    <ClCompile Include="StackInput.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stack.h" />

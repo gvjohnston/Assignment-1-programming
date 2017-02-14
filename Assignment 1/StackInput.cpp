@@ -1,16 +1,18 @@
+//redundant. Now in main.cpp
 #include <iostream>
 #include <iomanip> //contains setw(n)
 #include "stack.h"
 
 using namespace std;
 
+ 
 stack StackInput(){
 	stack StackInt(50);
 	int input;
 	while (true)
 	{
 		cin >> setw(1) >> input; //sets the field width of cin
-		if (input = -1){
+		if (input = -){
 			return StackInt;
 			break;
 		}

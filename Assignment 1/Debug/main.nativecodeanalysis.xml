@@ -1,2 +1,2 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<DEFECTS><DEFECT><SFA><FILEPATH>u:\ac52002\assignment 1\assignment 1\</FILEPATH><FILENAME>stackinput.cpp</FILENAME><LINE>13</LINE><COLUMN>12</COLUMN></SFA><DEFECTCODE>6282</DEFECTCODE><DESCRIPTION>Incorrect operator:  assignment of constant in Boolean context. Consider using '==' instead.</DESCRIPTION><FUNCTION>StackInput</FUNCTION><DECORATED>?StackInput@@YA?AVstack@@XZ</DECORATED><FUNCLINE>7</FUNCLINE><PATH/></DEFECT></DEFECTS>
+<DEFECTS></DEFECTS>

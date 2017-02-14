@@ -1,0 +1,25 @@
+1. Input as single numbers (chars?) in a stack. (do for both inputs)
+2. Test for the biggest number and assign that as the first (1st-2nd).
+   Note if the arrays are switched so a "-" can be prepended to output.
+3. Calculate difference and store answer in third stack.
+4. Output the answer with a "-" if necessary.
+
+1.1 Prompt for input and read first input.
+1.2 If input is the terminal symbol then stop inputing.
+1.3 If input is the retry symbol call current stack's deconstructor and start again
+1.4 If input is a number push it to the stack. (head to tail)
+1.5 Else return an error.
+
+2.1 If 2nd number > 1st number then 2nd number - 1st number 
+    and boolean switched is set true
+
+3.1 Take last digit of number 1 and 2.
+3.1.1 If the stack is empty the number is 0.
+3.1.2 If both stacks are empty the calculation is finished
+3.2 If first digit is greater than 2nd digit then the next 1st digit -1 and current first digit +10.
+3.3 Take the difference and push to answer stack. (tail to head)
+
+4.1 If switched is TRUE then cout "-"
+4.2 If answer stack is NOT empty push the next element
+4.3 Else end program 
+ 
