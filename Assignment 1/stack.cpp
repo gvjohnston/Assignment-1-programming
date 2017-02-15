@@ -2,21 +2,10 @@
 
 // Constructor
 
-stack :: stack(int stacksize) :
-StackSize(stacksize),
-Contents(new int[stacksize]),
-IndexOfTop (-1)
+stack :: stack() : IndexOfTop (-1)
 {}
 
-// Destructor
-
-stack :: ~stack()
-{
-  delete [] Contents;
-}
-
 // Tests
-
 bool stack :: Empty() const
 {
   return (IndexOfTop == -1) ? true : false;
@@ -24,7 +13,7 @@ bool stack :: Empty() const
 
 bool stack :: Full() const
 {
-  return (IndexOfTop == StackSize - 1) ? true : false;
+  return (IndexOfTop == MAXSTACKSIZE - 1) ? true : false;
 }
 
 // Pop and Push
@@ -51,4 +40,16 @@ bool stack :: Push(const int& NewElement)
     Contents[IndexOfTop] = NewElement;
     return true;
   }
+}
+
+//Additions by GJ
+
+int stack :: getIndex() //returns the index
+{
+	return IndexOfTop;
+}
+
+int stack :: getElement(int index) //returns the element at position index
+{
+	return Contents[index];
 }
